@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aad062;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="220.0" minHeight="10.0" prefHeight="186.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="220.0" minHeight="10.0" prefHeight="184.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Pane fx:id="p1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2c9b4f;">
+            <children>
+                <ImageView fx:id="imagen1" fitHeight="90.0" fitWidth="130.0" layoutX="37.0" layoutY="48.0" onMouseClicked="#clickImagen1" pickOnBounds="true" preserveRatio="true">
+                </ImageView>
+                <Label fx:id="nombre1" layoutX="40.0" layoutY="34.0" prefHeight="17.0" prefWidth="64.0" text="Label" textFill="WHITE" />
+                <Label fx:id="nivel1" layoutX="132.0" layoutY="34.0" prefHeight="17.0" prefWidth="44.0" text="Label" textFill="WHITE" />
+                <Label layoutX="33.0" layoutY="142.0" text="PS" textFill="#f3ff00" />
+                <ProgressBar fx:id="pb1" layoutX="48.0" layoutY="145.0" prefHeight="11.0" prefWidth="109.0" progress="1.0">
+                    <effect>
+                        <ColorAdjust />
+                    </effect></ProgressBar>
+                <Label fx:id="vida1" layoutX="43.0" layoutY="159.0" prefHeight="17.0" prefWidth="53.0" text="Label" textFill="WHITE" />
+                <CheckBox fx:id="cb1" layoutX="138.0" layoutY="159.0" mnemonicParsing="false" style="-fx-background-color: #28B463;" />
+                <ImageView fx:id="genero1" fitHeight="25.0" fitWidth="28.0" layoutX="164.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane fx:id="p2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2c9b4f;" GridPane.columnIndex="1">
+            <children>
+                <ImageView fx:id="imagen2" fitHeight="90.0" fitWidth="120.0" layoutX="59.0" layoutY="51.0" onMouseClicked="#clickImagen2" pickOnBounds="true" preserveRatio="true">
+                </ImageView>
+                <Label fx:id="nombre2" layoutX="40.0" layoutY="34.0" prefHeight="17.0" prefWidth="53.0" text="Label" textFill="WHITE" />
+                <Label fx:id="nivel2" layoutX="132.0" layoutY="34.0" prefHeight="17.0" prefWidth="44.0" text="Label" textFill="WHITE" />
+                <Label layoutX="33.0" layoutY="142.0" text="PS" textFill="#f3ff00" />
+                <ProgressBar fx:id="pb2" layoutX="48.0" layoutY="145.0" prefHeight="11.0" prefWidth="109.0" progress="1.0">
+                    <effect>
+                        <ColorAdjust />
+                    </effect></ProgressBar>
+                <Label fx:id="vida2" layoutX="43.0" layoutY="159.0" prefHeight="17.0" prefWidth="53.0" text="Label" textFill="WHITE" />
+                <CheckBox fx:id="cb2" layoutX="138.0" layoutY="159.0" mnemonicParsing="false" style="-fx-background-color: #28B463;" />
+                <ImageView fx:id="genero2" fitHeight="25.0" fitWidth="28.0" layoutX="164.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane fx:id="p3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2c9b4f;" GridPane.columnIndex="2">
+            <children>
+                <ImageView fx:id="imagen3" fitHeight="90.0" fitWidth="120.0" layoutX="65.0" layoutY="51.0" onMouseClicked="#clickImagen3" pickOnBounds="true" preserveRatio="true">
+                </ImageView>
+                <Label fx:id="nombre3" layoutX="40.0" layoutY="34.0" prefHeight="17.0" prefWidth="64.0" text="Label" textFill="WHITE" />
+                <Label fx:id="nivel3" layoutX="132.0" layoutY="34.0" prefHeight="17.0" prefWidth="44.0" text="Label" textFill="WHITE" />
+                <Label layoutX="33.0" layoutY="142.0" text="PS" textFill="#f3ff00" />
+                <ProgressBar fx:id="pb3" layoutX="48.0" layoutY="145.0" prefHeight="11.0" prefWidth="109.0" progress="1.0" />
+                <Label fx:id="vida3" layoutX="43.0" layoutY="159.0" prefHeight="17.0" prefWidth="53.0" text="Label" textFill="WHITE" />
+                <CheckBox fx:id="cb3" layoutX="138.0" layoutY="159.0" mnemonicParsing="false" style="-fx-background-color: #28B463;" />
+                <ImageView fx:id="genero3" fitHeight="25.0" fitWidth="28.0" layoutX="164.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane fx:id="p4" prefHeight="181.0" prefWidth="200.0" style="-fx-background-color: #2c9b4f #2c9b4f;" GridPane.rowIndex="1">
+            <children>
+                <ImageView fx:id="imagen4" fitHeight="80.0" fitWidth="150.0" layoutX="29.0" layoutY="54.0" onMouseClicked="#clickImagen4" pickOnBounds="true" preserveRatio="true">
+                </ImageView>
+                <Label fx:id="nombre4" layoutX="40.0" layoutY="23.0" prefHeight="17.0" prefWidth="64.0" text="Label" textFill="WHITE" />
+                <Label fx:id="nivel4" layoutX="132.0" layoutY="23.0" prefHeight="17.0" prefWidth="44.0" text="Label" textFill="WHITE" />
+                <Label layoutX="31.0" layoutY="132.0" text="PS" textFill="#f3ff00" />
+                <ProgressBar fx:id="pb4" layoutX="46.0" layoutY="134.0" prefHeight="11.0" prefWidth="109.0" progress="1.0" />
+                <Label fx:id="vida4" layoutX="43.0" layoutY="148.0" prefHeight="17.0" prefWidth="53.0" text="Label" textFill="WHITE" />
+                <CheckBox fx:id="cb4" layoutX="138.0" layoutY="148.0" mnemonicParsing="false" style="-fx-background-color: #28B463;" />
+                <ImageView fx:id="genero4" fitHeight="25.0" fitWidth="28.0" layoutX="164.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane fx:id="p5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2c9b4f;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <children>
+                <ImageView fx:id="imagen5" fitHeight="90.0" fitWidth="120.0" layoutX="40.0" layoutY="39.0" onMouseClicked="#clickImagen5" pickOnBounds="true" preserveRatio="true">
+                </ImageView>
+                <Label fx:id="nombre5" layoutX="40.0" layoutY="23.0" prefHeight="17.0" prefWidth="64.0" text="Label" textFill="WHITE" />
+                <Label fx:id="nivel5" layoutX="132.0" layoutY="23.0" prefHeight="17.0" prefWidth="44.0" text="Label" textFill="WHITE" />
+                <Label layoutX="31.0" layoutY="132.0" text="PS" textFill="#f3ff00" />
+                <ProgressBar fx:id="pb5" layoutX="46.0" layoutY="134.0" prefHeight="11.0" prefWidth="109.0" progress="1.0" />
+                <Label fx:id="vida5" layoutX="43.0" layoutY="148.0" prefHeight="17.0" prefWidth="53.0" text="Label" textFill="WHITE" />
+                <CheckBox fx:id="cb5" layoutX="138.0" layoutY="148.0" mnemonicParsing="false" style="-fx-background-color: #28B463;" />
+                <ImageView fx:id="genero5" fitHeight="25.0" fitWidth="28.0" layoutX="164.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane fx:id="p6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2c9b4f;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <children>
+                <ImageView fx:id="imagen6" fitHeight="90.0" fitWidth="120.0" layoutX="40.0" layoutY="39.0" onMouseClicked="#clickImagen6" pickOnBounds="true" preserveRatio="true">
+                </ImageView>
+                <Label fx:id="nombre6" layoutX="40.0" layoutY="23.0" prefHeight="17.0" prefWidth="64.0" text="Label" textFill="WHITE" />
+                <Label fx:id="nivel6" layoutX="132.0" layoutY="23.0" prefHeight="17.0" prefWidth="44.0" text="Label" textFill="WHITE" />
+                <Label layoutX="31.0" layoutY="132.0" text="PS" textFill="#f3ff00" />
+                <ProgressBar fx:id="pb6" layoutX="46.0" layoutY="134.0" prefHeight="11.0" prefWidth="109.0" progress="1.0" />
+                <Label fx:id="vida6" layoutX="43.0" layoutY="148.0" prefHeight="17.0" prefWidth="53.0" text="Label" textFill="WHITE" />
+                <CheckBox fx:id="cb6" layoutX="138.0" layoutY="148.0" mnemonicParsing="false" style="-fx-background-color: #28B463;" />
+                <ImageView fx:id="genero6" fitHeight="25.0" fitWidth="28.0" layoutX="164.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+                </ImageView>
+            </children>
+        </Pane>
+        <Button fx:id="Siguiente" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#clickSiguiente" prefHeight="25.0" prefWidth="78.0" text="Siguiente" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+    </children>
+</GridPane>
